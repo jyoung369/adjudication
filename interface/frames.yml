@@ -1,9 +1,9 @@
 # Metadata about your interface.
 #   "labels" change text displayed to the annotator and "names" change the
 #   backend object names
-template_name: ai_framing
-template_label: AI Framing Interface
-template_description: Annotation Template for AI Media Framing
+template_name: ai_framing_adjudication
+template_label: AI Framing Adjudication Interface
+template_description: Annotation Template for AI Media Framing Adjudication
 
 tokenization: char
 
@@ -12,6 +12,8 @@ display:
 
 instructions: |
   ## Annotating Instructions
+
+  Adjudication is a similar process to annotation except with the inclusion of a complex category. Annotation instructions are shown below. 
 
   The most comprehensive annotation guidelines are found here: [Guidelines](https://docs.google.com/presentation/d/1xzPApuKoEctxVBZEM_GEKs4Lmh6B67H_03pFFYtW_F8/edit?usp=sharing)
 
@@ -492,7 +494,7 @@ edits:
     label: "complex"
     enable_input: true # Enables selecting this edit on the input
     enable_output: false # Enables selecting this edit on the output
-    color: pink # Use HEX codes, or pre-defined colors
+    color: magenta # Use HEX codes, or pre-defined colors
     icon: fa-circle-exclamation # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
 
     # Specify annotations for the edit
@@ -525,6 +527,32 @@ edits:
             label: "intelligence"
           - name: jobs
             label: "jobs"
+          - name: misinformation
+            label: "misinformation"
+          - name: privacy
+            label: "privacy"
+          - name: productivity
+            label: "productivity"
+          - name: companions
+            label: "social companions"
+          - name: safety
+            label: "safety"
+          - name: scamming
+            label: "scamming"
+          - name: security
+            label: "security"
+          - name: media
+            label: "social media"
+          - name: integration
+            label: "societal integration"
+          - name: user
+            label: "user experience"
+          - name: weapons
+            label: "weapons"
+          - name: general
+            label: "general"
+          - name: other
+            label: "other"
       - name: sentiment
         label: "Positive/Negative"
         question: "Is the portryal of AI positive or negative?"
