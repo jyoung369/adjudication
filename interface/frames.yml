@@ -553,6 +553,8 @@ edits:
             label: "general"
           - name: other
             label: "other"
+          - name: none
+            label: "none"
       - name: sentiment
         label: "Positive/Negative"
         question: "Is the portryal of AI positive or negative?"
@@ -561,3 +563,5 @@ edits:
             label: "positive"
           - name: neg
             label: "negative"
+          - name: none
+            label: "none"
