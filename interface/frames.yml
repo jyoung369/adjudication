@@ -7,8 +7,8 @@ template_description: Annotation Template for AI Media Framing
 
 tokenization: char
 
-adjudication: 3 # <- Number of views to add
-highlight_first_interface: true # <- Adds a box around the first interface
+display:
+  - side-by-side
 
 instructions: |
   ## Annotating Instructions
@@ -30,7 +30,7 @@ interface_text:
     source_label: "Article"
     target_label: ""
 
-default_data_link: "https://raw.githubusercontent.com/jyoung369/adjudication/main/example.json"
+default_data_link: "https://raw.githubusercontent.com/jyoung369/frames/main/example.json"
 
 # "Edits" are our units of annotations. First, edits are selected, then annotated.
 edits:
@@ -479,6 +479,52 @@ edits:
         label: "Custom Frame"
         question: "Input your custom frame"
         options: textarea
+      - name: sentiment
+        label: "Positive/Negative"
+        question: "Is the portryal of AI positive or negative?"
+        options:
+          - name: pos
+            label: "positive"
+          - name: neg
+            label: "negative"
+
+  - name: complex
+    label: "complex"
+    enable_input: true # Enables selecting this edit on the input
+    enable_output: false # Enables selecting this edit on the output
+    color: pink # Use HEX codes, or pre-defined colors
+    icon: fa-circle-exclamation # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
+
+    # Specify annotations for the edit
+    annotation:
+      - name: frame
+        label: "frame"
+        question: "Select "
+        options:
+          - name: accountability
+            label: "accountability"
+          - name: bias
+            label: "bias"
+          - name: copyright
+            label: "copyright infringement"
+          - name: economy
+            label: "economy"
+          - name: energy
+            label: "energy"
+          - name: environment
+            label: "environment"
+          - name: education
+            label: "education"
+          - name: healthcare
+            label: "healthcare"
+          - name: impersonation
+            label: "impersonation"
+          - name: info
+            label: "information access"
+          - name: intelligence
+            label: "intelligence"
+          - name: jobs
+            label: "jobs"
       - name: sentiment
         label: "Positive/Negative"
         question: "Is the portryal of AI positive or negative?"
