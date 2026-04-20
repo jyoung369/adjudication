@@ -108,23 +108,23 @@ edits:
           - name: neg
             label: "negative"
 
-  - name: energy
-    label: "energy"
-    enable_input: true # Enables selecting this edit on the input
-    enable_output: false # Enables selecting this edit on the output
-    color: green # Use HEX codes, or pre-defined colors
-    icon: fa-bolt # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
+  # - name: energy
+  #   label: "energy"
+  #   enable_input: true # Enables selecting this edit on the input
+  #   enable_output: false # Enables selecting this edit on the output
+  #   color: green # Use HEX codes, or pre-defined colors
+  #   icon: fa-bolt # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
 
-    # Specify annotations for the edit
-    annotation:
-      - name: sentiment
-        label: "Positive/Negative"
-        question: "Is the portryal of AI positive or negative?"
-        options:
-          - name: pos
-            label: "positive"
-          - name: neg
-            label: "negative"
+  #   # Specify annotations for the edit
+  #   annotation:
+  #     - name: sentiment
+  #       label: "Positive/Negative"
+  #       question: "Is the portryal of AI positive or negative?"
+  #       options:
+  #         - name: pos
+  #           label: "positive"
+  #         - name: neg
+  #           label: "negative"
 
   - name: environment
     label: "environment"
@@ -481,6 +481,34 @@ edits:
         label: "Custom Frame"
         question: "Input your custom frame"
         options: textarea
+      - name: sentiment
+        label: "Positive/Negative"
+        question: "Is the portryal of AI positive or negative?"
+        options:
+          - name: pos
+            label: "positive"
+          - name: neg
+            label: "negative"
+
+  - name: energy
+    label: "energy"
+    enable_input: true # Enables selecting this edit on the input
+    enable_output: false # Enables selecting this edit on the output
+    color: green # Use HEX codes, or pre-defined colors
+    icon: fa-bolt # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
+
+    annotation:
+      - name: annotator
+        label: "annotator"
+        question: "Annotator (DO NOT EDIT)"
+        options:
+          - name: annotator1
+            label: "annotator1"
+          - name: annotator2
+            label: "annotator2"
+          - name: annotator1&2
+            label: "annotator1&2"
+
       - name: sentiment
         label: "Positive/Negative"
         question: "Is the portryal of AI positive or negative?"
