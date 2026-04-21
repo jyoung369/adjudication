@@ -5,9 +5,10 @@ template_name: ai_framing
 template_label: AI Framing Interface
 template_description: Annotation Template for AI Media Framing
 
-tokenization: char
 adjudication: 2
 highlight_first_interface: true
+
+tokenization: char
 
 display:
   - side-by-side
