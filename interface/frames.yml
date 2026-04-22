@@ -477,6 +477,7 @@ edits:
     annotation:
       - name: custom
         label: "Custom Frame"
+        required: false
         question: "Input your custom frame"
         options: textarea
       - name: sentiment
@@ -497,13 +498,61 @@ edits:
 
     # Specify annotations for the edit
     annotation:
-      - name: custom
-        label: "Custom Frame"
-        question: "Input your custom frame"
-        options: textarea
-      - name: sentiment
-        label: "Positive/Negative"
-        question: "Is the portryal of AI positive or negative?"
+      - name: frame1
+        label: "frame1"
+        question: "Which frame do you most agree with?"
+        options:
+          - name: accountability
+            label: "accountability"
+          - name: bias
+            label: "bias"
+          - name: copyright
+            label: "copyright infringement"
+          - name: economy
+            label: "economy"
+          - name: energy
+            label: "energy"
+          - name: environment
+            label: "environment"
+          - name: education
+            label: "education"
+          - name: healthcare
+            label: "healthcare"
+          - name: impersonation
+            label: "impersonation"
+          - name: info
+            label: "information access"
+          - name: intelligence
+            label: "intelligence"
+          - name: jobs
+            label: "jobs"
+          - name: misinformation
+            label: "misinformation"
+          - name: privacy
+            label: "privacy"
+          - name: productivity
+            label: "productivity"
+          - name: companions
+            label: "social companions"
+          - name: safety
+            label: "safety"
+          - name: scamming
+            label: "scamming"
+          - name: security
+            label: "security"
+          - name: media
+            label: "social media"
+          - name: integration
+            label: "societal integration"
+          - name: user
+            label: "user experience"
+          - name: weapons
+            label: "weapons"
+          - name: general
+            label: "general"
+      - name: sentiment1
+        label: "sentiment1"
+        question: "Which sentiment positive or negative?"
         options:
           - name: pos
             label: "positive"
