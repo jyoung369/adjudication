@@ -8,9 +8,6 @@ template_description: Annotation Template for AI Media Framing
 adjudication: 2
 highlight_first_interface: true
 
-display:
-  - side-by-side
-  
 tokenization: char
 
 instructions: |
@@ -475,6 +472,28 @@ edits:
     enable_output: false # Enables selecting this edit on the output
     color: red # Use HEX codes, or pre-defined colors
     icon: fa-question # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
+
+    # Specify annotations for the edit
+    annotation:
+      - name: custom
+        label: "Custom Frame"
+        question: "Input your custom frame"
+        options: textarea
+      - name: sentiment
+        label: "Positive/Negative"
+        question: "Is the portryal of AI positive or negative?"
+        options:
+          - name: pos
+            label: "positive"
+          - name: neg
+            label: "negative"
+
+  - name: complex
+    label: "complex"
+    enable_input: true # Enables selecting this edit on the input
+    enable_output: false # Enables selecting this edit on the output
+    color: magenta # Use HEX codes, or pre-defined colors
+    icon: fa-hand # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
 
     # Specify annotations for the edit
     annotation:
