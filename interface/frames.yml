@@ -8,6 +8,9 @@ template_description: Annotation Template for AI Media Framing
 adjudication: 2
 highlight_first_interface: true
 
+display:
+  - side-by-side
+  
 tokenization: char
 
 instructions: |
