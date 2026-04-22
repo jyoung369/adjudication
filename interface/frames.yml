@@ -553,6 +553,8 @@ edits:
             label: "weapons"
           - name: general
             label: "general"
+          - name: other
+            label: "other"
           - name: none
             label: "none"
       - name: custom1
@@ -622,6 +624,8 @@ edits:
             label: "weapons"
           - name: general
             label: "general"
+          - name: other
+            label: "other"
           - name: none
             label: "none"
       - name: custom2
