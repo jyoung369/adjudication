@@ -10,6 +10,9 @@ highlight_first_interface: true
 
 tokenization: char
 
+display:
+  - side-by-side
+
 instructions: |
   ## Annotating Instructions
 
