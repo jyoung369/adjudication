@@ -553,6 +553,8 @@ edits:
             label: "weapons"
           - name: general
             label: "general"
+          - name: none
+            label: "none"
       - name: custom1
         label: "custom1"
         required: false
@@ -566,6 +568,8 @@ edits:
             label: "positive"
           - name: neg
             label: "negative"
+          - name: none
+            label: "none"
       - name: frame2
         label: "frame2"
         question: "Which frame do you secondly agree with?"
@@ -618,6 +622,8 @@ edits:
             label: "weapons"
           - name: general
             label: "general"
+          - name: none
+            label: "none"
       - name: custom2
         label: "custom2"
         required: false
@@ -631,3 +637,5 @@ edits:
             label: "positive"
           - name: neg
             label: "negative"
+          - name: none
+            label: "none"
