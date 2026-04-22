@@ -553,6 +553,11 @@ edits:
             label: "weapons"
           - name: general
             label: "general"
+      - name: custom1
+        label: "custom1"
+        required: false
+        question: 'If you selected "other", input your custom frame'
+        options: textarea
       - name: sentiment1
         label: "sentiment1"
         question: "Is the portryal of AI positive or negative?"
@@ -613,6 +618,11 @@ edits:
             label: "weapons"
           - name: general
             label: "general"
+      - name: custom2
+        label: "custom2"
+        required: false
+        question: 'If you selected "other", input your custom frame'
+        options: textarea
       - name: sentiment2
         label: "sentiment2"
         question: "Is the portryal of AI positive or negative?"
